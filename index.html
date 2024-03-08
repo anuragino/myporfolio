@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+        <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/lightstyle.css" />
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    >
+
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+  <div class="mode-container">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <i class="fa-solid fa-moon" style="color: #ecdb22;"></i>
+      <i class="fa-solid fa-sun" style="color: #ffca0a;"></i>
+      <span class="ball"></span>
+    </label>
+  </div>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img class="profile-pic"
+              src="assets/images/Anurag_Kumar.jpeg"
+              alt="Anurag_Kumar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Anurag Kumar"> Anurag Kumar</h1>
+
+            <p class="title">Software Developer</p>
+
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:anuragino20@gmail.com" class="contact-link"
+                  >anuragino20@gmail.com</a
+                >
+              </div>
+            </li>
+
+          
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>New Delhi, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/anuragino"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            
+            <li class="social-item">
+              <a
+                href="https://github.com/anuragino"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <!-- <li class="social-item">
+              <a
+                href="https://twitter.com/anuragino"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> -->
+            <li class="social-item">
+              <a
+                href="https://auth.geeksforgeeks.org/user/anurag_ino"
+                target="_blank"
+                class="social-link"
+              >
+              <img src="./assets/images/icons/gfg.png" alt="leetcode">
+            </a>
+            </li>
+            
+            <li class="social-item">
+              <a
+                href="https://leetcode.com/anuragino/"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./assets/images/icons/leetcode.png" alt="leetcode">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Skills</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>         
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>         
+            </li>
+          
+
+
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a 3rd-year BTech student specializing in Information Technology from Bhagwan Parshuram Institute of Technology.
+              I have a strong foundation in Data Structures and Algorithms, having solved over 700+ problems across various coding platforms.
+              This has not only sharpened my problem-solving skills but also instilled in me a deep appreciation for efficient and elegant code.
+            </p>
+            <p>
+              In terms of programming languages, I am proficient in C++, a language I find both powerful and versatile. Additionally, I have a strong grasp of JavaScript, a language crucial for modern web development.
+            </p>
+            
+            <p>
+              Speaking of web development, I have hands-on experience with the MERN stack (MongoDB, Express.js, React.js, Node.js), through which I've developed several impressive websites.
+              These projects have not only honed my skills in full-stack development but have also given me valuable insights into creating user-friendly and responsive web applications.
+            </p>
+
+            <p>
+              My drive centers around making a significant impact on teams and advancing a brighter future. I'm passionate about contributing to societal development and my personal growth. 
+              I eagerly seek out exciting and purposeful challenges, while remaining committed to high ethical standards and unwavering dedication.
+            </p>
+            
+
+          </section>
+
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+
+              
+              <li class="service-item">
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Structures and Alogrithm</h4>
+
+                  <p class="service-item-text">
+                    With a strong foundation in DSA, I've tackled over 700 questions across various platforms, 
+                    honing my problem-solving skills. Achieving the rank of 6 on GeeksforGeeks within my institute,
+                     I've delved deep into algorithms, mastering efficient solutions. DSA is my playground for logical thinking and optimizing code for real-world applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    Utilizing the MERN Stack, I've crafted impressive projects and am currently immersed in developing the Nutrify app, a Nutrition Tracker.
+                     Leveraging MongoDB for data management, Express.js for backend services, React.js for dynamic UIs, and Node.js for server-side logic, I'm creating a seamless and modern web experience for users passionate about health and nutrition.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Profile Links</h3>
+            <ul class="testimonials-list has-scrollbar">
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Resume<br /><a href="https://drive.google.com/file/d/1NRG7jTm0FIC797b1ObEyUOKb3Ncn4_on/view?usp=drive_link" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Leetcode<br /><a href="https://leetcode.com/anuragino/" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    GeeksForGeeks<br /><a href="https://auth.geeksforgeeks.org/user/anurag_ino" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    GitHub<br /><a href="https://github.com/anuragino" target="_blank">(link)</a>
+                  </h3>
+              </li>
+
+            </ul>
+          </section>
+
+
+          <!-- <section class="testimonials">
+            <h3 class="h3 testimonials-title">Position of Responsibilities</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mentor <br /> Google Developer
+                    Students Club
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    As a Mentor for the Web Development Circle, I have successfully achieved a 97%+ satisfaction 
+                    rate based on valuable student feedback from engaging and impactful sessions. Additionally,
+                     I am also a reviewer at GDSC's SnowScript Winter of Code, contributing to the 
+                     maintenance of a Portfolio project. This experience significantly enhanced my skills in 
+                     GitHub and Gitpod, fostering proficiency in collaborative development and version control.
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Associate<br /> Website Team @Taarangana
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    <p>
+                      Executed the design and deployment of the event website's sponsor page, enhancing sponsor engagement 
+                      and visibility. Mentored and coordinated workflow,
+                       overseeing task allocation within a team of freshers. Contributed to the overall website, designed to 
+                       facilitate registrations for over 1000+ students. Currently developing an entry-pass (QR-Code) scanner application using Node.js and MongoDB, ensuring secure ticket verification through real-time database checks.                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    President<br />Ananta - The Science Society, IPCW
+                  </h4>
+
+                  <div class="testimonials-text-main"  data-testimonials-text>
+                    <p>
+                      During the final year of my graduation at Indraprastha College for Women, University of Delhi,
+                       I lead the Science Society of the college containing 100+ members, as its president.
+                       I was personally responsible for team recruitment, task management by regularly assuring the quality of work and organizing various workshops and quizzes for the overall development of students from a diverse set of backgrounds.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Technical Head <br />Ananta - The Science Society, IPCW
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    <p>
+                      During the second year of my graduation at IPCW, DU, I was the head of the Graphics Team and the Technical Head of the Science Society.
+                      I coordinated with fellow core team members and department representatives to manage the Society's Website (Google Sites), Google Drive, 
+                      social Media Handles and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </section> -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+          </div>
+
+
+        </article>
+
+          
+        <!--
+        - #Skills
+      -->
+<section>
+        <article class="skills" data-page="skills">
+          <header>
+            <h2 class="h2 article-title">Skills</h2>
+          </header>
+
+          <section >
+            <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML" style="margin: 10px;">
+            <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS" style="margin: 10px;">
+            <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript (JS)" style="margin: 10px;">
+            <img src="https://img.icons8.com/color/96/000000/tailwindcss.png" alt="tailwind" style="margin: 10px;">
+
+            <img src="https://img.icons8.com/color/96/000000/react-native.png" alt="react native" style="margin: 0px;">
+            <img src="./assets/images/icons/git.png" alt="Git" style="margin: 10px;">
+            <img src="./assets/images/icons/github.png" alt="GitHub" style="margin: 10px;">
+
+          
+            <img src="./assets/images/icons/postman.png" alt="Postman" style="margin: 10px;">
+            <img src="./assets/images/icons/node.png" alt="VS Code" style="margin: 10px;">
+            <img src="./assets/images/icons/express.png" alt="express" style="margin: 10px;">
+            <!-- <img src="./assets/images/icons/figma.png" alt="figma" style="margin: 10px;">
+            <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="C++" style="margin: 10px;"> -->
+          </section>
+
+          <br><br>
+          <h3 class="h3">Profile Links</h3>
+          <section class="testimonials">
+            <ul class="testimonials-list has-scrollbar">
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Resume<br /><a href="https://drive.google.com/file/d/1NRG7jTm0FIC797b1ObEyUOKb3Ncn4_on/view?usp=drive_link/" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Leetcode<br /><a href="https://leetcode.com/anuragino/" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    GeeksForGeeks<br /><a href="https://auth.geeksforgeeks.org/user/anurag_ino" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    GitHub<br /><a href="https://github.com/anuragino" target="_blank">(link)</a>
+                  </h3>
+              </li>
+              
+
+            </ul>
+          </section>
+
+        </article>
+      </section>
+
+
+
+        <!-- Resume -->
+
+    <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume
+            <span class="resume-link"><a href="https://drive.google.com/file/d/1NRG7jTm0FIC797b1ObEyUOKb3Ncn4_on/view?usp=drive_link/" target="_blank" >(Link)</a></span>
+          </h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY
+              </h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology in Information Technology
+              </p>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">NEW YASHODA PUBLIC SCHOOL</h4>
+
+              <span> Grad. 2021</span>
+
+              <p class="timeline-text">Senior Secondary Education</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DEFENCE HIGH SCHOOL</h4>
+
+              <span> Grad. 2019</span>
+
+              <p class="timeline-text">Secondary Education</p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+                      <h3 class="h3">Achievements</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              
+              Rank 5th among 1500+ college-mates on GeeksForGeeks.
+              </h4>
+
+              <span><a href="https://auth.geeksforgeeks.org/user/anurag_ino" target="_blank">GeeksForGeeks</a></span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              
+                Achieved a LeetCode rating of 1,645+, demonstrating strong coding skills.
+
+              </h4>
+
+              <span><a href="https://leetcode.com/anuragino/" target="_blank">LeetCode</a></span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              
+                Solved more than 650+ DSA problems across platforms.
+
+              </h4>
+
+              <span> Till Date</span>
+            </li>
+
+            <!-- <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dr. S.N. Goenka Memorial Scholarship Highest CGPA</h4>
+
+              <span>Indraprastha College for Women, DU</span>
+
+              <p class="timeline-text">
+                Scholarship for highest cgpa in BSC. Computer Science Hons. in the year 2020-21Scholarship</p>
+            </li> -->
+
+            
+          </ol>
+        </section>
+
+        </article>
+
+        <!--
+        - #Projects
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino/Nutrify" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Nutrify.png"
+                      alt="Nutrify"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Nutrify</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">MongoDB | Express.js |  Node.js | React</span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    
+                  Nutrify, a responsive MERN stack(MongoDB, Express.js, Node.js, React) app, enables users to log daily meals, track nutrition, and monitor metrics securely.
+                  Features include intuitive meal entry and robust user authentication for encrypted, validated logins.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="BlogHub"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">BlogHub</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">React | Redux-Toolkit | Tailwindcss | Appwrite</span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    A blog website, crafted with React and Tailwind CSS for a captivating reading experience. 
+                    Enhanced by a robust rich text editor and supported by Appwrite backend, it ensures smooth 
+                    article management and secure user authentication.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino/Cara-Ecommerce-Website" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/cara.png"
+                      alt="CARA"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">CARA</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Vanilla JavaScript | CSS | HTML </span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    Cara Ecommerce, a responsive platform, boasts an intuitive UI and diverse product catalog. 
+                    With Vanilla JavaScript, HTML5, and CSS3, it ensures seamless shopping, user-friendly cart, and hassle-free checkout for all devices.
+                  </p>
+                </a>
+              </li>
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino/NewsLetter" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/SignUp.png"
+                      alt="Easy-Care"
+                      height="80"
+                      width="120"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">NewsLetter</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Express.js | Mailchimp API | Bootstrap</span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    Built a Newsletter SignUp page using Bootstrap's login template, collecting user info. Utilized Mailchimp API for data submission to server.
+                    Deployed securely on Render site with API privacy ensured through configuration file.
+                  </p>
+                </a>
+              </li>
+
+              <li
+              class="project-item active"
+              data-filter-item
+              data-category="python project"
+            >
+              <a href="https://github.com/anuragino/Simon-Game" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./assets/images/Simon.png"
+                    alt="WeatherScrapy"
+                    height="100"
+                    width="10"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">Simon-Game</h3>
+
+                <p class="project-category"></p>
+                <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Vanilla JavaScript | CSS | HTML </span>
+                <br/>
+                
+
+                <p class="project-category" style="font-size:14px">
+                  Developed SIMON Game which challenges memory skills with four colored buttons: green, red, yellow, and blue. 
+                  Players repeat increasingly complex sequences to achieve high scores, ending the game with a mistake.
+                </p>
+              </a>
+            </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino/UsabilityHub-Clone" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/Usability.png" alt="ERC-20" height="80"
+                      width="120" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">UsabilityHub</h3>
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">HTML/CSS | JavaScript | Bootstrap</span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    UsabilityHub site clone created to mimic its functionality: conducting user tests, surveys, and feedback. 
+                    Features include intuitive interface, test creation, response collection, and analytics. Built using HTML, CSS, JavaScript, and frameworks..            </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino/Drum-Kit" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/DrumKit.png"
+                      alt="ER-721"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Drum-Kit</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">JavaScript | HTML/CSS </span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    My drum kit replicates a full drum set, featuring bass drum, snare, toms, hi-hats, crash, and ride cymbals. 
+                    Users can play various rhythms, providing a virtual drumming experience for musicians.
+                  </p></a>
+
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/anuragino" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Protfolio.png"
+                      alt="Easy-Care"
+                      height="80"
+                      width="120"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Gallery</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">HTML/CSS | JavaScript | Animations</span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    The website Gallery, crafted with HTML, CSS, and animations, showcases images elegantly.
+                    Smooth transitions and designs enhance the viewing experience, creating a visually appealing display for users to explore and enjoy.
+                  </p>
+                </a>
+              </li>
+
+              
+             
+            </ul>
+          </section>
+        </article>
+
+        <!-- Contact -->
+        <article class="contact" data-page="contact">
+
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+  
+          <section class="mapbox" data-mapbox="">
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433021.5594331448!2d77.09323125!3d28.6440836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e1!3m2!1sen!2sin!4v1709326657229!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </section>
+  
+          <section class="contact-form">
+  
+            <h3 class="h3 form-title">Contact Form</h3>
+  
+            <form action="mailto:your_email@example.com" method="post" enctype="text/plain" class="form"  >
+  
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required="" data-form-input="">
+  
+                <input type="email" name="email" class="form-input" placeholder="Email address" required="" data-form-input="">
+              </div>
+  
+              <textarea name="message" class="form-input" placeholder="Your Message" required="" data-form-input=""></textarea>
+  
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+  
+            </form>
+  
+          </section>
+  
+        </article>
+
+      </div>
+     
+      
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+
